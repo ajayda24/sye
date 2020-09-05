@@ -1,0 +1,20 @@
+{
+    "name": "Sharpen your Eyes",
+    "short_name": "SyE",
+    "start_url": ".",
+    "background_color": "#204051",
+    "theme_color": "#3b6978",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/logo72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

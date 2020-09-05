@@ -1,0 +1,153 @@
+body{
+    background-color: #222831;
+    color: aliceblue;
+}
+button{
+    height: 4rem;
+    width: 3rem;
+    border-radius: 30px;
+}
+#start-button{
+    border-radius: 20px;
+    margin-top: 2%;
+    width: 20%;
+}
+#submit-mark{
+    border-radius: 20px;
+    margin-top: 10%;
+    width: 90%;
+}
+#theme-switch{
+    border-radius: 20px;
+    margin-top: 2%;
+    width: 20%;
+}
+#instructions-button{
+    border-radius: 20px;
+    margin-top: 2%;
+    width: 20%;
+}
+#volume{
+    width: 60px;
+    background-color: rgb(186, 204, 229);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+}
+.dark-mode {
+    background-color: aliceblue;
+    color: #222831;
+  }
+#group-button{
+    width: 12%;
+    border-radius: 20px;
+}
+#retry-button{
+    text-align: center;
+}
+#retry-div{
+    display: none;
+    text-align: center;
+}
+.game-rules{
+    text-align: left;
+    width: 40%;
+    
+}
+#game-rules-id{
+    display: none;
+}
+#retryGame{
+    width: 100%;
+    height: 40rem;
+    display: none;
+    margin-top: 5%;
+}
+#scoreDisplay{
+    position: fixed;
+    width: 10rem;
+    top: 0;
+    border-radius: 12px;
+    text-align: center;
+    background-color: royalblue;
+    color: ivory;
+}
+.margin{
+    margin-top: 5%;
+}
+#loseImage{
+    width: 18%;
+}
+table{
+    width: 200px;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid rgb(160, 163, 160);
+}
+caption{
+      text-align: center;
+      color: aliceblue;
+}
+
+/* ---------------------- */
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .top {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .middle{
+      border-radius: 0;
+      margin-bottom: -1px;
+      
+  }
+
+@media only screen and (max-width: 636px) {
+    .game-rules{
+        text-align: left;
+        width: 100%;
+    }
+    #start-button{
+        border-radius: 20px;
+        margin-top: 2%;
+        width: 60%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #theme-switch{
+        border-radius: 20px;
+        margin-top: 2%;
+        width: 70%;
+    }
+    #instructions-button{
+        border-radius: 20px;
+        margin-top: 2%;
+        width: 60%;
+    }
+    #group-button{
+        width: 40%;
+        border-radius: 20px;
+    }
+    #loseImage{
+        width: 50%;
+    }
+}

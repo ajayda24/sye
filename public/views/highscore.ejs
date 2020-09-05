@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+
+<center>
+    <table>
+        <caption style="caption-side:top">High Score</caption>
+        <tr>
+            <th>Sl.no</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    
+    <% for(var i=0; i<3; i++){ %>
+        <tr>
+            <td><%= i+1 %></td>
+            <td><%= name[i].name %></td>
+            <td><%= score[i].score %></td>
+        </tr>
+    <% } %>
+    </table>
+    </center>
+
+
+<%- include('partials/footer'); -%>

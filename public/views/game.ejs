@@ -1,0 +1,70 @@
+<%- include('partials/header'); -%>
+
+    
+    
+    
+<center>
+    <div id="game-head">
+    <h1>Sharpen your Eyes</h1>
+    <h5>Developed by Ajay Daniel Trevor</h5> 
+    <br>
+     
+        
+</div>
+    <div id="entry">
+        
+        
+
+    
+
+    
+    <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1hM60pKBZAGYKyRLztQdjejOZ1e8zu-d7DuYgKz4FMchVi3laqj0Akz9zdNk_uE51ITVgqFwTSmd_/pubhtml?widget=true&amp;headers=false"></iframe>    <input type="button" id="start-button" class="btn btn-lg btn-primary btn-block" onclick="startButton()" value="Start Game"> -->
+    <button id="instructions-button" class="btn btn-lg btn-danger btn-block" onclick="showInstructions()" >Show Instructions</button>
+    <div class="game-rules" id="game-rules-id">
+        <br>
+        <h4>
+        <ul>
+            <li>Tap the Gold stone for bonus Score</li>
+            <li>When you tap on the white stone you will lose.</li>
+            <li>When the green stone touches the top of the screen, you will lose.</li>
+        </ul>
+        </h4>
+        <center>
+        <video width="320" height="240" autoplay id="instruction-video">
+            <source src="images/original-0.mp4" type="video/mp4">
+        </video>
+        </center>
+        <br>
+    </div>
+    
+
+    <button id="start-button" class="btn btn-lg btn-primary btn-block" onclick="startButton()" >Start Game</button>
+    <button id="start-button" class="btn btn-lg btn-danger btn-block" onclick="window.location.href='/result'" >Show Result</button>
+    <br>
+    <div class="btn-group" id="group-button" role="group">
+        <button type="button"  class="btn btn-primary"><img src="images/volume.png" alt="volume" id="volume-img"></button>
+        <button type="button" class="btn btn-light" onclick="themeToggle()" id="theme-button"> <center><b> Change Theme</b></center></button>
+    </div>
+    <br>
+
+    <%- include('highscore'); -%>
+
+</div>
+<h3 id="scoreDisplay"></h3>
+<br>
+<div id="retryGame">
+<img id="loseImage" class="loseOrWin" src="images/giphy.gif" alt="lose">
+<button id="start-button" class="btn btn-lg btn-primary btn-block" onclick="window.location.href='/'" >Retry Game</button>
+<br>
+<form id="submit-form" class="form-signin" action="/" method="POST">
+    <label for="inputFirstName" class="sr-only">Name</label>
+    <input type="text" name="Name" id="inputFirstName" class="form-control top" placeholder="Enter your Name to Submit Score" required autofocus autocomplete="off">
+    <input type="number" name="Score" id="scoreForm" class="form-control top" placeholder="Enter your Mark">
+    <!-- <button type="submit">Submit</button> -->
+    <button id="submit-mark" class="btn btn-lg btn-danger btn-block" type="submit">Submit Score</button>
+    </form>
+    
+</div>
+</center>
+
+<%- include('partials/footer'); -%>
